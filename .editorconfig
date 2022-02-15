@@ -1,0 +1,4 @@
+# https://superuser.com/questions/699382/how-do-i-automatically-trim-trailing-whitespace-with-notepad
+# trims trailing whitespace for all files; filter like [*.{json,xml}]
+[*]
+trim_trailing_whitespace = true
