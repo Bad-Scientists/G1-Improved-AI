@@ -1,6 +1,11 @@
 /*
  *	Copy of ZS_Guard
  */
+
+func void TA_Smalltalk_BridgeGuard(var int start_h,var int start_m,var int stop_h,var int stop_m,var string waypoint) {
+	TA_Min(self,start_h,start_m,stop_h,stop_m,ZS_Smalltalk_BridgeGuard,waypoint);
+};
+
 //variable tracking dialogue number for this conversation
 var int smallTalk_275_diaNo;
 
