@@ -1,5 +1,7 @@
 # ZS cutscenes in vanilla Gothic 1
 
+   [![ZS cutscenes in vanilla Gothic 1](https://img.youtube.com/vi/vEwIwRQjj6c/0.jpg)](https://www.youtube.com/watch?v=vEwIwRQjj6c)
+
 ### High level concept description
 
 Dialogue has 2 main ingredients:
