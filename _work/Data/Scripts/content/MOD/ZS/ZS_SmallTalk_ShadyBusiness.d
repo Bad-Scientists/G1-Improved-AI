@@ -19,6 +19,20 @@ func void ZS_Smalltalk_ShadyBusiness()
 
 func void ZS_Smalltalk_ShadyBusiness_Loop()
 {
+	/*
+	 *	GRD_253_Gardist (self) talking with STT_304_Schatten
+	 */
+	var C_NPC npc; npc = Hlp_GetNpc (STT_304_Schatten);
+
+	if (Hlp_IsValidNpc (npc)) {
+		//If NPC is not in ZS_Smalltalk_Partner state - start the state
+		if (!NPC_IsInState (npc, ZS_Smalltalk_Partner)) {
+			Npc_SetTarget (npc, self);
+			AI_StartState (npc, ZS_Smalltalk_Partner, 1, "");
+		};
+
+		B_SmartTurnToNpc(self, npc);
+	};
 	AI_Wait(self, 1);
 };
 
