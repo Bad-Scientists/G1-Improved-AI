@@ -48,6 +48,9 @@ instance GRD_275_Brueckenwache(Npc_Default)
 
 func void Rtn_start_275()
 {
-	TA_Guard(06, 00, 21, 00, "OW_PATH_1_1");
-	TA_Guard(21, 00, 06, 00, "OW_PATH_1_1");
+	//TA_Guard(06, 00, 21, 00, "OW_PATH_1_1");
+	//TA_Guard(21, 00, 06, 00, "OW_PATH_1_1");
+
+	TA_Smalltalk_BridgeGuard(06, 00, 21, 00, "OW_PATH_1_1");
+	TA_Smalltalk_BridgeGuard(21, 00, 06, 00, "OW_PATH_1_1");
 };
