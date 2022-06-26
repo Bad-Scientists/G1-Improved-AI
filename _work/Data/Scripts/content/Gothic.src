@@ -379,6 +379,9 @@ Story\ZS\ZS_Steuerung\ZS_Erpresser.d
 
 MOD\dialogueManager.d
 MOD\ZS\ZS_SmallTalk_Partner.d
+
+MOD\subtitles.d
+
 AI\Monster\MST_BlackGobbo.d
 AI\Monster\MST_Bloodfly.d
 AI\Monster\MST_Bloodhound.d
