@@ -1,17 +1,8 @@
-//////////////////////////////////////////////////////////////////////////
-//	ZS_Guard
-//	========
-//	Dieser Tagesablauf wird allen NSCs gegeben, die einfach nur
-//	imposant herumstehen und Wache halten sollen.
-//
-//	Es passiert folgendes:
-//	1. Wie in allen Wachzuständen werden nette Posen und Zufalls-
-//		Animationen abgespielt.
-//////////////////////////////////////////////////////////////////////////
-func void ZS_Guard()
+/*
+ *	Copy of ZS_Guard
+ */
+func void ZS_Smalltalk_BridgeGuard()
 {
-	PrintDebugNpc(PD_TA_FRAME, "ZS_Guard");
-
 	GuardPerception();
 	Npc_PercEnable(self, PERC_ASSESSPLAYER, B_AssessSC);
 
@@ -21,10 +12,8 @@ func void ZS_Guard()
 	B_InitArmor();
 };
 
-func void ZS_Guard_Loop()
+func void ZS_Smalltalk_BridgeGuard_Loop()
 {
-	PrintDebugNpc(PD_TA_LOOP, "ZS_Guard_Loop");
-
 	B_GotoFP(self, "GUARD");
 
 	if (Npc_GetDistToNpc(self, hero) < 800)
@@ -41,9 +30,7 @@ func void ZS_Guard_Loop()
 	AI_Wait(self, 0.5);
 };
 
-func void ZS_Guard_End()
+func void ZS_Smalltalk_BridgeGuard_End()
 {
-	PrintDebugNpc(PD_TA_FRAME, "ZS_Guard_End");
-
 	B_ExitArmor();
 };
