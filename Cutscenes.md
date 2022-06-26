@@ -2,7 +2,7 @@
 
 ### High level concept description
 
-Dialogue has 2 main ingrediences:
+Dialogue has 2 main ingredients:
  - sequence
  - timing
 
