@@ -1,6 +1,10 @@
 /*
  *	Copy of ZS_Smalltalk
  */
+
+//variable tracking dialogue number for this conversation
+var int smallTalk_253_diaNo;
+
 func void ZS_Smalltalk_ShadyBusiness()
 {
 	B_SetPerception(self);
