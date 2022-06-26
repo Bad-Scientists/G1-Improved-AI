@@ -376,6 +376,9 @@ Story\ZS\Pers\ZS_Sleeper.d
 Story\ZS\Pers\ZS_TestBully.d
 Story\ZS\Pers\ZS_XardasDemon.d
 Story\ZS\ZS_Steuerung\ZS_Erpresser.d
+
+MOD\dialogueManager.d
+MOD\ZS\ZS_SmallTalk_Partner.d
 AI\Monster\MST_BlackGobbo.d
 AI\Monster\MST_Bloodfly.d
 AI\Monster\MST_Bloodhound.d
