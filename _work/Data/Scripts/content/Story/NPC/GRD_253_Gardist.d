@@ -46,8 +46,11 @@ instance GRD_253_Gardist(Npc_Default)
 
 func void Rtn_start_253()
 {
-	TA_Smalltalk(00, 00, 08, 00, "OCR_AT_HUT_3");
-	TA_Smalltalk(08, 00, 00, 00, "OCR_AT_HUT_3");
+	//TA_Smalltalk(00, 00, 08, 00, "OCR_AT_HUT_3");
+	//TA_Smalltalk(08, 00, 00, 00, "OCR_AT_HUT_3");
+
+	TA_Smalltalk_ShadyBusiness(00, 00, 08, 00, "OCR_AT_HUT_3");
+	TA_Smalltalk_ShadyBusiness(08, 00, 00, 00, "OCR_AT_HUT_3");
 };
 
 func void Rtn_FMTaken_253()
