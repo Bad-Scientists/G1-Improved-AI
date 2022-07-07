@@ -34,7 +34,9 @@ func void ZS_Smalltalk_ShadyBusiness_Loop()
 
 	if (Hlp_IsValidNpc (npc)) {
 		//If NPC is not in ZS_Smalltalk_Partner state - start the state
-		if (!NPC_IsInState (npc, ZS_Smalltalk_Partner)) {
+		if ((!NPC_IsInState (npc, ZS_Smalltalk_Partner))
+		&& (npc.aivar [AIV_INVINCIBLE == FALSE))
+		{
 			Npc_SetTarget (npc, self);
 			AI_StartState (npc, ZS_Smalltalk_Partner, 1, "");
 		};
