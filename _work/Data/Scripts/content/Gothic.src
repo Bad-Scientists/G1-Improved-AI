@@ -5,6 +5,14 @@ AI\AI_Intern\PrintDebug.d
 AI\AI_Intern\AI_Constants.d
 AI\AI_Intern\AI_MM_Constants.d
 AI\AI_Intern\Perception.d
+
+// Ikarus
+
+MOD\Ikarus\Ikarus_Const_G1.d
+MOD\Ikarus\EngineClasses_G1\*.d
+MOD\Ikarus\Ikarus.d
+MOD\Ikarus\float.d
+
 AI\AI_Intern\C_Functions.d
 AI\AI_Intern\B_Functions.d
 AI\AI_Intern\PrintAttitudes.d
