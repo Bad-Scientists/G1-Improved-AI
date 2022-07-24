@@ -13,6 +13,9 @@ MOD\Ikarus\EngineClasses_G1\*.d
 MOD\Ikarus\Ikarus.d
 MOD\Ikarus\float.d
 
+// LeGo
+MOD\LeGo\Header_G1.src
+
 AI\AI_Intern\C_Functions.d
 AI\AI_Intern\B_Functions.d
 AI\AI_Intern\PrintAttitudes.d
