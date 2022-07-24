@@ -4,3 +4,6 @@
 [submodule "_work/Data/Scripts/content/MOD/LeGo"]
 	path = _work/Data/Scripts/content/MOD/LeGo
 	url = https://github.com/Lehona/LeGo
+[submodule "_work/Data/Scripts/content/MOD/AF-Script-Packet"]
+	path = _work/Data/Scripts/content/MOD/AF-Script-Packet
+	url = https://github.com/auronen/AF-Script-Packet
