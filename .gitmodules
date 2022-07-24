@@ -1,3 +1,6 @@
 [submodule "_work/Data/Scripts/content/MOD/Ikarus"]
 	path = _work/Data/Scripts/content/MOD/Ikarus
 	url = https://github.com/Lehona/Ikarus
+[submodule "_work/Data/Scripts/content/MOD/LeGo"]
+	path = _work/Data/Scripts/content/MOD/LeGo
+	url = https://github.com/Lehona/LeGo
