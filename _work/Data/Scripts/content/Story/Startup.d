@@ -4,6 +4,12 @@ func void Init_Global () {
 
 	//LeGo
 	LeGo_Init (LeGo_HookEngine | LeGo_View | LeGo_AI_Function | LeGo_Interface | LeGo_PermMem | LeGo_ConsoleCommands | LeGo_GameState | LeGo_Cursor | LeGo_FrameFunctions | LeGo_EventHandler | LeGo_Saves | LeGo_Bars | LeGo_PrintS);
+
+	//--> AFSP
+	//Additional perceptions
+	G12_AddPerceptions_Init ();
+
+	//<--
 };
 
 func void STARTUP_SUB_PSICAMP()
