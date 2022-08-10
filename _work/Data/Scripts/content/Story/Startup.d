@@ -10,6 +10,9 @@ func void Init_Global () {
 	G12_AddPerceptions_Init ();
 
 	//<--
+
+	//Hook that will update useWithItem for Npc in case Npc tries to use FIREPLACE
+	G12_FirePlaceLighter_Init ();
 };
 
 func void STARTUP_SUB_PSICAMP()
