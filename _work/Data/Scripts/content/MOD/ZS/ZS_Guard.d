@@ -15,6 +15,9 @@ func void ZS_Guard()
 	GuardPerception();
 	Npc_PercEnable(self, PERC_ASSESSPLAYER, B_AssessSC);
 
+	//Add custom perception - detecting fireplaces
+	Npc_PercEnableCustom (self, B_FirePlaceLighter_AssessSelf);
+
 	AI_StandUp(self);
 	AI_SetWalkMode(self, NPC_WALK); // Walkmode für den Zustand
 	AI_GotoWP(self, self.wp); // Gehe zum Tagesablaufstart
