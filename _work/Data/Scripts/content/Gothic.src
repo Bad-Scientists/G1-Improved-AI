@@ -325,7 +325,7 @@ Story\ZS\ZS_EBR_HangAround.d
 Story\ZS\ZS_Firespit.d
 Story\ZS\ZS_FollowMode.d
 Story\ZS\ZS_FollowPC.d
-Story\ZS\ZS_Guard.d
+MOD\ZS\ZS_Guard.d
 Story\ZS\ZS_GuardPalisade.d
 Story\ZS\ZS_GuardPassage.d
 Story\ZS\ZS_GuardPatrol.d
