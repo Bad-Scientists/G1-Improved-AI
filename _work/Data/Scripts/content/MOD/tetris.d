@@ -367,10 +367,11 @@ func void Tetris_Destroy () {
 				t = _^ (ptr);
 				ViewPtr_Delete (t.v);
 			};
+			free (ptr, TetrisTile@);
 		end;
 	end;
 
-	////Delete views - preview
+	//Delete views - preview
 	repeat (i, TETRISMATRIXSIZE);
 		repeat (j, TETRISMATRIXSIZE);
 			ptr = TetrisPreview_GetTilePtr (i, j);
@@ -378,6 +379,7 @@ func void Tetris_Destroy () {
 				t = _^ (ptr);
 				ViewPtr_Delete (t.v);
 			};
+			free (ptr, TetrisTile@);
 		end;
 	end;
 
@@ -477,11 +479,11 @@ func void FF_Tetris_RemoveCompletedLines () {
 };
 
 func int GetKey__Tetris (var int key) {
-	if ((key == MEM_GetKey ("keyLeft")) || (key == MEM_GetSecondaryKey ("keyLeft")) || (key == MEM_GetKey ("keyStrafeLeft")) || (key == MEM_GetSecondaryKey ("keyStrafeLeft")) || (key == MOUSE_WHEEL_UP)) {
+	if ((key == MEM_GetKey ("keyLeft")) || (key == MEM_GetSecondaryKey ("keyLeft")) || (key == MEM_GetKey ("keyStrafeLeft")) || (key == MEM_GetSecondaryKey ("keyStrafeLeft"))) {
 		return KEY_LEFTARROW;
 	};
 
-	if ((key == MEM_GetKey ("keyRight")) || (key == MEM_GetSecondaryKey ("keyRight")) || (key == MEM_GetKey ("keyStrafeRight")) || (key == MEM_GetSecondaryKey ("keyStrafeRight")) || (key == MOUSE_WHEEL_DOWN)) {
+	if ((key == MEM_GetKey ("keyRight")) || (key == MEM_GetSecondaryKey ("keyRight")) || (key == MEM_GetKey ("keyStrafeRight")) || (key == MEM_GetSecondaryKey ("keyStrafeRight"))) {
 		return KEY_RIGHTARROW;
 	};
 
