@@ -21,6 +21,10 @@ MOD\AF-Script-Packet\_headers_G1_All.src
 
 // Console calls
 MOD\ScriptBin\consoleCalls.d
+
+// Adding new constants
+MOD\constants.d
+
 // Adding new perception functions
 MOD\perceptions.d
 
