@@ -60,7 +60,7 @@ func int ZS_MM_PetMolerat_Loop()
 	//NPC_VobListDetectItem (var int slfInstance, var int mainflag, var int excludeMainFlag, var int flags, var int excludeFlags, var int searchFlags, var int distLimit, var int verticalLimit)
 	//SEARCHVOBLIST_CANSEE - by default Npc will only detect items that it can see
 	//SEARCHVOBLIST_CHECKPORTALROOMOWNER - and which are not in portal room (I guess - why not :))
-	var int vobPtr; vobPtr = NPC_VobListDetectItem (self, 0, 0, 0, 0, SEARCHVOBLIST_CANSEE | SEARCHVOBLIST_CHECKPORTALROOMOWNER, 2000, 800);
+	var int vobPtr; vobPtr = NPC_VobListDetectItem (self, 0, 0, 0, ITEM_DROPPED, SEARCHVOBLIST_CANSEE | SEARCHVOBLIST_CHECKPORTALROOMOWNER, 2000, 800);
 
 	//If any item was detected
 	if (vobPtr) {
@@ -155,7 +155,7 @@ func int ZS_MM_PetMolerat_CollectItem_Loop ()
 	oCNpc_ClearVobList (self);
 	oCNpc_CreateVobList (self, mkf (1600));
 
-	var int vobPtr; vobPtr = NPC_VobListDetectItem (self, 0, 0, 0, 0, SEARCHVOBLIST_CANSEE | SEARCHVOBLIST_CHECKPORTALROOMOWNER, 2000, 800);
+	var int vobPtr; vobPtr = NPC_VobListDetectItem (self, 0, 0, 0, ITEM_DROPPED, SEARCHVOBLIST_CANSEE | SEARCHVOBLIST_CHECKPORTALROOMOWNER, 2000, 800);
 
 	if (vobPtr) {
 		//Goto item
