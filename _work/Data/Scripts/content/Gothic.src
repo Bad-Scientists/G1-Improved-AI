@@ -213,6 +213,9 @@ AI\Prototypes\NPC_Default.d
 AI\ZS_Monster\ZS_MM_AttackMage.d
 AI\ZS_Monster\ZS_MM_Master.d
 AI\ZS_Monster\ZS_MM_SummonedByPC.d
+
+MOD\ZS\ZS_MM_PetMolerat.d
+
 Story\B\B_GiveDeathInv.d
 AI\ZS_Human\ZS_AssessDefeat.d
 AI\ZS_Human\ZS_AssessEnemy.d
