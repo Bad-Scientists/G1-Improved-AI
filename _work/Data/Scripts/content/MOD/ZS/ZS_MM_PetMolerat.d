@@ -1,8 +1,5 @@
-func void ZS_MM_SummonedByPC()
 func void ZS_MM_PetMolerat()
 {
-	PrintDebugNpc(PD_MST_FRAME, "ZS_MM_SummonedByPC");
-
 	Npc_SetTempAttitude(self, ATT_FRIENDLY);
 	Npc_SetAttitude(self, ATT_FRIENDLY);
 
@@ -17,12 +14,8 @@ func void ZS_MM_PetMolerat()
 	AI_StandUp(self);
 };
 
-func int ZS_MM_SummonedByPC_Loop()
 func int ZS_MM_PetMolerat_Loop()
 {
-	PrintDebugNpc(PD_MST_LOOP, "ZS_MM_SummonedByPC_Loop");
-	PrintGlobals(PD_MST_DETAIL);
-
 	if (Npc_GetStateTime(self) > self.aivar[AIV_MM_TimeLooseHP])
 	{
 		// -------- Kreatur wird nach einiger Zeit schwächer !--------
@@ -33,7 +26,6 @@ func int ZS_MM_PetMolerat_Loop()
 	if (Npc_GetNextTarget(self))
 	{
 		// -------- neues Ziel entdeckt ! --------
-		PrintDebugNpc(PD_MST_CHECK, "...neuer Gegner gefunden");
 		Npc_SetTarget(self, other);
 		Npc_ClearAIQueue(self);
 		AI_StartState(self, ZS_MM_Attack, 0, "");
@@ -60,8 +52,6 @@ func int ZS_MM_PetMolerat_Loop()
 	};
 };
 
-func void ZS_MM_SummonedByPC_End()
 func void ZS_MM_PetMolerat_End()
 {
-	PrintDebugNpc(PD_MST_FRAME, "ZS_MM_SummonedByPC_End");
 };
