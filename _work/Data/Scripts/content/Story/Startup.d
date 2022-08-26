@@ -7,6 +7,9 @@ func void Init_Global () {
 
 	//Console calls
 	CC_CallInit ();
+
+	//Additional perceptions
+	G12_AddPerceptions_Init ();
 };
 
 func void STARTUP_SUB_PSICAMP()
