@@ -19,6 +19,27 @@ func void ZS_MM_PetMolerat()
 
 func int ZS_MM_PetMolerat_Loop()
 {
+	//Item detection - create vob list (within specified range)
+	oCNpc_ClearVobList (self);
+	oCNpc_CreateVobList (self, mkf (1600));
+
+	//NPC_VobListDetectItem (var int slfInstance, var int mainflag, var int excludeMainFlag, var int flags, var int excludeFlags, var int searchFlags, var int distLimit, var int verticalLimit)
+	//SEARCHVOBLIST_CANSEE - by default Npc will only detect items that it can see
+	//SEARCHVOBLIST_CHECKPORTALROOMOWNER - and which are not in portal room (I guess - why not :))
+	var int vobPtr; vobPtr = NPC_VobListDetectItem (self, 0, 0, 0, 0, SEARCHVOBLIST_CANSEE | SEARCHVOBLIST_CHECKPORTALROOMOWNER, 2000, 800);
+
+	//If any item was detected
+	if (vobPtr) {
+		//We have to pick up items in separate ZS state.
+		//Perceptions PERC_ASSESSENEMY & PERC_ASSESSPLAYER might interfere with AI - so while collecting items we will not enable these
+
+		//Clear perceptions
+		B_ClearPerceptions (self);
+
+		//Start new AI state - item collection
+		AI_StartState (self, ZS_MM_PetMolerat_CollectItem, 1, "");
+		return LOOP_END;
+	} else {
 		// -------- SC-Meister folgen ! --------
 		if (Npc_GetDistToNpc(self, hero) > self.aivar[AIV_MM_DistToMaster])
 		{
@@ -33,8 +54,9 @@ func int ZS_MM_PetMolerat_Loop()
 				AI_TurnToNpc(self, hero);
 			};
 		};
+	};
 
-		return LOOP_CONTINUE;
+	return LOOP_CONTINUE;
 };
 
 func void ZS_MM_PetMolerat_End()
