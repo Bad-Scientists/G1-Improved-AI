@@ -59,6 +59,26 @@ func int ZS_MM_PetMolerat_Loop()
 	return LOOP_CONTINUE;
 };
 
+/*
+ *	_oCNpc_DoTakeDetectedVob
+ *	 - function will be called from AI queue and will take item from the world
+ */
+func void _oCNpc_DoTakeDetectedVob (var int vobPtr) {
+	//Sooooo ...
+	//While Npc is walking towards an item - item itself might disappear (player can pick it up)
+	//So we will double-check here whether this pointer is still in active vob list in the game - if yes we will try to pick it up
+
+	//If it is still active - pick it up
+	if (VobPtr_IsInActiveVobList (vobPtr)) {
+		if (oCNpc_DoTakeVob (self, vobPtr)) {
+			return;
+		};
+	};
+
+	//If something went wrong (item was not there anymore or for some reason Npc didn't pick it up) - clear AI queue - this will remove T_DIG animation
+	NPC_ClearAIQueue (self);
+};
+
 func void ZS_MM_PetMolerat_End()
 {
 };
