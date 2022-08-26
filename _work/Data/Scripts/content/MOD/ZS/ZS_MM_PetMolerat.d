@@ -190,3 +190,25 @@ func int ZS_MM_PetMolerat_CollectItem_Loop ()
 func void ZS_MM_PetMolerat_CollectItem_End ()
 {
 };
+
+func void ZS_MM_PetMolerat_ThrowUpItems () {
+	//Same as ZS_MM_SummonedByPC - but ignoring enemies and ignoring player
+	Npc_SetTempAttitude(self, ATT_FRIENDLY);
+	Npc_SetAttitude(self, ATT_FRIENDLY);
+
+	//Npc_PercEnable(self, PERC_ASSESSENEMY, B_SummonedByPC_AssessEnemy);
+	//Npc_PercEnable(self, PERC_ASSESSPLAYER, B_SummonedByPC_AssessSC);
+	Npc_PercEnable(self, PERC_ASSESSFIGHTSOUND, B_MM_SummonedByPCAssessOthersDamage);
+	Npc_SetPercTime(self, 0.5);
+
+	Npc_PercEnable(self, PERC_ASSESSMAGIC, B_AssessMagic);
+	Npc_PercEnable(self, PERC_ASSESSDAMAGE, ZS_MM_Attack);
+
+	AI_StandUp(self);
+};
+
+func int ZS_MM_PetMolerat_ThrowUpItems_Loop () {
+};
+
+func void ZS_MM_PetMolerat_ThrowUpItems_End () {
+};
