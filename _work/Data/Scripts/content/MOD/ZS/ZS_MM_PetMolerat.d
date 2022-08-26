@@ -187,6 +187,23 @@ func int ZS_MM_PetMolerat_CollectItem_Loop ()
 	return LOOP_END;
 };
 
+/*
+ *	B_MM_ThrowUpItem
+ *	 - custom perception (called by AFSP AddPerceptions feature) in parallel with AI!
+ */
+func void B_MM_ThrowUpItem () {
+	//Does molerat have anything in item slot?
+	if (oCNpc_GetSlotItem (self, MOLERAT_ITEM_SLOT_NAME)) {
+		//Check animation progress
+		var int aniProgress; aniProgress = NPC_GetProgressPercent (self, "T_WARN");
+		var int percentage; percentage = divf (mkf (5), mkf (10));
+		if (gf (aniProgress, percentage)) {
+			//Do throw item if T_WARN animation progressed to 50%
+			Npc_DoThrowUpItem (self, MOLERAT_ITEM_SLOT_NAME);
+		};
+	};
+};
+
 func void ZS_MM_PetMolerat_CollectItem_End ()
 {
 };
@@ -203,6 +220,9 @@ func void ZS_MM_PetMolerat_ThrowUpItems () {
 
 	Npc_PercEnable(self, PERC_ASSESSMAGIC, B_AssessMagic);
 	Npc_PercEnable(self, PERC_ASSESSDAMAGE, ZS_MM_Attack);
+
+	//Add custom perception - which will check progress of T_WARN animation
+	Npc_PercEnableCustom (self, B_MM_ThrowUpItem);
 
 	AI_StandUp(self);
 };
