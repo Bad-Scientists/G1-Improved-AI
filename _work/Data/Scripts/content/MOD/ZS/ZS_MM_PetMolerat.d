@@ -82,6 +82,40 @@ func void ZS_MM_PetMolerat_CollectItem ()
 
 func int ZS_MM_PetMolerat_CollectItem_Loop ()
 {
+	//Item detection - create vob list (within specified range)
+	oCNpc_ClearVobList (self);
+	oCNpc_CreateVobList (self, mkf (1600));
+
+	var int vobPtr; vobPtr = NPC_VobListDetectItem (self, 0, 0, 0, 0, SEARCHVOBLIST_CANSEE | SEARCHVOBLIST_CHECKPORTALROOMOWNER, 2000, 800);
+
+	if (vobPtr) {
+		//Goto item
+		AI_GotoVobPtr (self, vobPtr);
+
+		//If close enough - take item
+		if (NPC_GetDistToVobPtr (self, vobPtr) < 300) {
+			//--> This will not work with monster Npc - it is missing animations S_RUN & T_STAND_2_IGET > S_IGET > T_IGET_2_STAND + fight mode has to be FMODE_NONE
+			//var oCItem itm; itm = _^ (vobPtr);
+			//AI_GotoItem (self, itm);
+			//AI_TakeItem (self, itm);
+			//<--
+
+			//Turn to vob
+			AI_TurnToVobPtr (self, vobPtr);
+
+			//Add _oCNpc_DoTakeDetectedVob (this will try to take item) into AI queue function and play animation
+			AI_Function_I (self, _oCNpc_DoTakeDetectedVob, vobPtr);
+			AI_PlayAni (self, "T_DIG");
+
+			return LOOP_CONTINUE;
+		};
+
+		//Continue _LOOP state
+		return LOOP_CONTINUE;
+	};
+
+	//If no item was detected exit _LOOP state
+	return LOOP_END;
 };
 
 func void ZS_MM_PetMolerat_CollectItem_End ()
