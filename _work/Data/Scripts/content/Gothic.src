@@ -426,6 +426,9 @@ AI\Monster\MST_UndeadOrcWarrior.d
 AI\Monster\MST_Waran.d
 AI\Monster\MST_Wolf.d
 AI\Monster\MST_Zombie.d
+
+MOD\NPC\PetMolerat.d
+
 AI\Orc\OrcSlave_Perc.d
 AI\Orc\Orc_Perc.d
 AI\Orc\B_Orc_SmartTurn.d
