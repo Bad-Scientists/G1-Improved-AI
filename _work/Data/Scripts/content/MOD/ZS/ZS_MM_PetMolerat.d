@@ -1,4 +1,5 @@
 func void ZS_MM_SummonedByPC()
+func void ZS_MM_PetMolerat()
 {
 	PrintDebugNpc(PD_MST_FRAME, "ZS_MM_SummonedByPC");
 
@@ -17,6 +18,7 @@ func void ZS_MM_SummonedByPC()
 };
 
 func int ZS_MM_SummonedByPC_Loop()
+func int ZS_MM_PetMolerat_Loop()
 {
 	PrintDebugNpc(PD_MST_LOOP, "ZS_MM_SummonedByPC_Loop");
 	PrintGlobals(PD_MST_DETAIL);
@@ -59,6 +61,7 @@ func int ZS_MM_SummonedByPC_Loop()
 };
 
 func void ZS_MM_SummonedByPC_End()
+func void ZS_MM_PetMolerat_End()
 {
 	PrintDebugNpc(PD_MST_FRAME, "ZS_MM_SummonedByPC_End");
 };
