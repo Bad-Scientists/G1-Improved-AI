@@ -17,3 +17,8 @@ instance PetMolerat(Mst_Default_Molerat)
 	start_aistate = ZS_MM_PetMolerat;
 };
 
+func void SummonFriendlyMolerat () {
+	//For testing purposes - we cannot use console `insert PetMolerat`
+	//... inserting via console will update attitude and molerat would attack us even when it has attitude set to ATT_FRIENDLY in its ZS state :)
+	Wld_SpawnNpcRange(hero, PetMolerat, 1, 1000);
+};
