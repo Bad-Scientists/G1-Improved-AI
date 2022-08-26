@@ -47,10 +47,8 @@ func int ZS_MM_PetMolerat_Loop()
 		}
 		else
 		{
-			if (!Npc_CanSeeNpc(self, hero))
-			{
-				AI_TurnToNpc(self, hero);
-				AI_TurnToNpc(self, hero);
+			//If Npc is not looking within range of 10 degrees - turn to player
+			if (!NPC_IsVobPtrInAngleX (self, _@ (hero), 10)) {
 				AI_TurnToNpc(self, hero);
 			};
 		};
