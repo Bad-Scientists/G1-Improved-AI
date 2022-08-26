@@ -18,13 +18,13 @@ func int PetMolerat_CanThrowUpItems (var C_NPC slf) {
 		if (amount > 0) {
 			//Remove item from inventory - 1 piece
 			var int vobPtr; vobPtr = _@ (item);
-			vobPtr = oCNpc_RemoveFromInvByPtr (self, vobPtr, 1);
+			vobPtr = oCNpc_RemoveFromInvByPtr (slf, vobPtr, 1);
 
 			//Create inventory slot (force creation if it does not exist already)
-			NPC_CreateInvSlot (self, MOLERAT_ITEM_SLOT_NAME);
+			NPC_CreateInvSlot (slf, MOLERAT_ITEM_SLOT_NAME);
 
 			//Put item into item slot
-			oCNpc_PutInSlot_Fixed (self, MOLERAT_ITEM_SLOT_NAME, vobPtr, 0);
+			oCNpc_PutInSlot_Fixed (slf, MOLERAT_ITEM_SLOT_NAME, vobPtr, 0);
 			return TRUE;
 		};
 	end;
