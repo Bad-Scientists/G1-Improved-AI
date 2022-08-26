@@ -32,6 +32,10 @@ func int PetMolerat_CanThrowUpItems (var C_NPC slf) {
 	return FALSE;
 };
 
+/*
+ *	ZS_MM_PetMolerat
+ *	 - main AI state. Npc is following player and detecting items. If item is detected AI state ZS_MM_PetMolerat_CollectItem will be started.
+ */
 func void ZS_MM_PetMolerat()
 {
 	Npc_SetTempAttitude(self, ATT_FRIENDLY);
@@ -108,6 +112,10 @@ func int ZS_MM_PetMolerat_Loop()
 	return LOOP_CONTINUE;
 };
 
+func void ZS_MM_PetMolerat_End()
+{
+};
+
 /*
  *	_oCNpc_DoTakeDetectedVob
  *	 - function will be called from AI queue and will take item from the world
@@ -128,10 +136,10 @@ func void _oCNpc_DoTakeDetectedVob (var int vobPtr) {
 	NPC_ClearAIQueue (self);
 };
 
-func void ZS_MM_PetMolerat_End()
-{
-};
-
+/*
+ *	ZS_MM_PetMolerat_CollectItem
+ *	 - AI state for item collection
+ */
 func void ZS_MM_PetMolerat_CollectItem ()
 {
 	//Same as ZS_MM_SummonedByPC - but ignoring enemies and ignoring player
@@ -185,6 +193,10 @@ func int ZS_MM_PetMolerat_CollectItem_Loop ()
 
 	//If no item was detected exit _LOOP state
 	return LOOP_END;
+};
+
+func void ZS_MM_PetMolerat_CollectItem_End ()
+{
 };
 
 /*
@@ -244,10 +256,10 @@ func void B_MM_ThrowUpItem () {
 	};
 };
 
-func void ZS_MM_PetMolerat_CollectItem_End ()
-{
-};
-
+/*
+ *	ZS_MM_PetMolerat_ThrowUpItems
+ *	 - AI state in which Npc will throw up items to the player
+ */
 func void ZS_MM_PetMolerat_ThrowUpItems () {
 	//Same as ZS_MM_SummonedByPC - but ignoring enemies and ignoring player
 	Npc_SetTempAttitude(self, ATT_FRIENDLY);
