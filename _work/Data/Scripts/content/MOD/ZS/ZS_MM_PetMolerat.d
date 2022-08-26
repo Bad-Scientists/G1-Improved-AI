@@ -188,6 +188,44 @@ func int ZS_MM_PetMolerat_CollectItem_Loop ()
 };
 
 /*
+ *	Npc_DoThrowUpItem
+ *	 - function throws item from item slot to left hand of the player
+ */
+func void Npc_DoThrowUpItem (var C_NPC slf, var string itemSlot) {
+	//Get position of the item slot
+	var int posFrom[3];
+	var int nodePosPtr;
+
+	nodePosPtr = NPC_GetNodePositionWorld (slf, itemSlot);
+	if (nodePosPtr) {
+		CopyVector (nodePosPtr, _@ (posFrom));
+	};
+	MEM_Free (nodePosPtr);
+
+	//Get position of the player - left foot
+	var int posTo[3];
+
+	nodePosPtr = NPC_GetNodePositionWorld (hero, "BIP01 L FOOT");
+	if (nodePosPtr) {
+		CopyVector (nodePosPtr, _@ (posTo));
+	};
+	MEM_Free (nodePosPtr);
+
+	//Drop item from slot (this will insert it into the world)
+	var int vobPtr; vobPtr = oCNpc_DropFromSlot (slf, itemSlot);
+
+
+	var int dir[3];
+	var zCVob vob; vob = Hlp_GetNpc (slf);
+	TrfDirToVector (_@ (vob.trafoObjToWorld), _@ (dir));
+
+	//Throw item using Vob_ThrowAngle
+	var int angle; angle = 35 + Hlp_Random (10);
+	var int velocity; velocity = 200 + Hlp_Random (100);
+	Vob_ThrowAngle (vobPtr, _@ (posFrom), _@ (dir), angle, velocity);
+};
+
+/*
  *	B_MM_ThrowUpItem
  *	 - custom perception (called by AFSP AddPerceptions feature) in parallel with AI!
  */
