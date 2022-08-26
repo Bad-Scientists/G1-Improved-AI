@@ -208,6 +208,9 @@ func void ZS_MM_PetMolerat_ThrowUpItems () {
 };
 
 func int ZS_MM_PetMolerat_ThrowUpItems_Loop () {
+	//'Throw up' animation
+	AI_PlayAni (self, "T_WARN");
+	return LOOP_END;
 };
 
 func void ZS_MM_PetMolerat_ThrowUpItems_End () {
