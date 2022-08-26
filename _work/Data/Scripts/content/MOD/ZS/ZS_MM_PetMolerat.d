@@ -12,6 +12,9 @@ func void ZS_MM_PetMolerat()
 	Npc_PercEnable(self, PERC_ASSESSDAMAGE, ZS_MM_Attack);
 
 	AI_StandUp(self);
+
+	//Show AI - for debugging purposes
+	NPC_SetShowAI (self, 1);
 };
 
 func int ZS_MM_PetMolerat_Loop()
