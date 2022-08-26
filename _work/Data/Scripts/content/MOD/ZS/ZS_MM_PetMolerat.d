@@ -1,3 +1,37 @@
+//Default inventory slot - inside head
+const string MOLERAT_ITEM_SLOT_NAME = "BIP01 HEAD";
+
+/*
+ *	PetMolerat_CanThrowUpItems
+ *	 - returns true if Npc has any items in its inventory
+ *	 - function by default puts item into the inventory slot
+ */
+func int PetMolerat_CanThrowUpItems (var C_NPC slf) {
+	//Start from slot 0
+	var int itmSlot; itmSlot = 0;
+
+	//Loop through all inventory categories
+	repeat (invCategory, INV_CAT_MAX); var int invCategory;
+
+		//Is there any item?
+		var int amount; amount = NPC_GetInvItemBySlot (slf, invCategory, itmSlot);
+		if (amount > 0) {
+			//Remove item from inventory - 1 piece
+			var int vobPtr; vobPtr = _@ (item);
+			vobPtr = oCNpc_RemoveFromInvByPtr (self, vobPtr, 1);
+
+			//Create inventory slot (force creation if it does not exist already)
+			NPC_CreateInvSlot (self, MOLERAT_ITEM_SLOT_NAME);
+
+			//Put item into item slot
+			oCNpc_PutInSlot_Fixed (self, MOLERAT_ITEM_SLOT_NAME, vobPtr, 0);
+			return TRUE;
+		};
+	end;
+
+	return FALSE;
+};
+
 func void ZS_MM_PetMolerat()
 {
 	Npc_SetTempAttitude(self, ATT_FRIENDLY);
@@ -50,6 +84,23 @@ func int ZS_MM_PetMolerat_Loop()
 			//If Npc is not looking within range of 10 degrees - turn to player
 			if (!NPC_IsVobPtrInAngleX (self, _@ (hero), 10)) {
 				AI_TurnToNpc(self, hero);
+			} else
+			{
+				//If Npc does not have anything in its item slot
+				if (!oCNpc_GetSlotItem (self, MOLERAT_ITEM_SLOT_NAME)) {
+					//Check if it can throw up anything inside it's belly :)
+					if (PetMolerat_CanThrowUpItems (self)) {
+						//We have to 'throw up' items in separate ZS state.
+						//Perceptions PERC_ASSESSENEMY & PERC_ASSESSPLAYER might interfere with AI - so while collecting items we will not enable these
+
+						//Clear perceptions
+						B_ClearPerceptions (self);
+
+						//Start new AI state - item throw up
+						AI_StartState (self, ZS_MM_PetMolerat_ThrowUpItems, 1, "");
+						return LOOP_END;
+					};
+				};
 			};
 		};
 	};
