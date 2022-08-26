@@ -214,6 +214,8 @@ func void Npc_DoThrowUpItem (var C_NPC slf, var string itemSlot) {
 	//Drop item from slot (this will insert it into the world)
 	var int vobPtr; vobPtr = oCNpc_DropFromSlot (slf, itemSlot);
 
+	//Add item dropped flag (Molerat will ignore dropped items)
+	oCItem_AddFlags (vobPtr, ITEM_DROPPED);
 
 	var int dir[3];
 	var zCVob vob; vob = Hlp_GetNpc (slf);
