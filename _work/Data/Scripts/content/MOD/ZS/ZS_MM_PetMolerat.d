@@ -16,22 +16,6 @@ func void ZS_MM_PetMolerat()
 
 func int ZS_MM_PetMolerat_Loop()
 {
-	if (Npc_GetStateTime(self) > self.aivar[AIV_MM_TimeLooseHP])
-	{
-		// -------- Kreatur wird nach einiger Zeit schwächer !--------
-		Npc_ChangeAttribute(self, ATR_HITPOINTS, -1);
-		Npc_SetStateTime(self, 0);
-	};
-
-	if (Npc_GetNextTarget(self))
-	{
-		// -------- neues Ziel entdeckt ! --------
-		Npc_SetTarget(self, other);
-		Npc_ClearAIQueue(self);
-		AI_StartState(self, ZS_MM_Attack, 0, "");
-	}
-	else
-	{
 		// -------- SC-Meister folgen ! --------
 		if (Npc_GetDistToNpc(self, hero) > self.aivar[AIV_MM_DistToMaster])
 		{
@@ -47,9 +31,7 @@ func int ZS_MM_PetMolerat_Loop()
 			};
 		};
 
-		// AI_Wait(self, 1);
 		return LOOP_CONTINUE;
-	};
 };
 
 func void ZS_MM_PetMolerat_End()
