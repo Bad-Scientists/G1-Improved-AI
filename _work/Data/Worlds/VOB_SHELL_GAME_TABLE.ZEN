@@ -1,0 +1,1118 @@
+ZenGin Archive
+ver 1
+zCArchiverGeneric
+ASCII
+saveGame 0
+date 28.6.2019 22:39:15
+user user1
+END
+objects 59       
+END
+
+[% oCWorld:zCWorld 64513 0]
+	[VobTree % 0 0]
+		childs0=int:1
+		[% zCVob 12289 1]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5928.35254 -1460.78076 -3072.5166 6039.05566 -1372.78076 -2848.61841 
+			trafoOSToWSRot=raw:188d233d00000000dfcb7fbf000000000000803f00000000dfcb7f3f00000000188d233d
+			trafoOSToWSPos=vec3:5982.70508 -1460.78076 -2960.52759
+			vobName=string:VOB_SHELL_GAME_TABLE
+			visual=string:OC_TABLE_V3.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:1
+			staticVob=bool:1
+			dynShadow=enum:0
+			[visual zCProgMeshProto 0 2]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs1=int:54
+		[% zCVob 12289 3]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5968.1626 -1372.03101 -3004.7373 5978.67236 -1370.02295 -2994.22754 
+			trafoOSToWSRot=raw:315e56bd000000006aa67fbf000000000000803f000000006aa67f3f00000000315e56bd
+			trafoOSToWSPos=vec3:5973.41748 -1371.02295 -2999.48242
+			vobName=string:VOB_GAME_COIN_RIGHT
+			visual=string:ITMI_GOLD.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual zCProgMeshProto 0 4]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs2=int:0
+		[% zCVob 12289 5]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5963.29053 -1373.38318 -3008.40015 5984.02441 -1349.26697 -2990.2915 
+			trafoOSToWSRot=raw:2897b2bd7ad28e3cc5fc7e3fa4e5b2bb8ef57fbfa7738b3cb6057f3f828c81bb81c1b23d
+			trafoOSToWSPos=vec3:5972.81299 -1349.13696 -2999.87085
+			vobName=string:VOB_GAME_CUP_RIGHT
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual zCProgMeshProto 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs3=int:0
+		[% zCVob 12289 7]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5966.20264 -1373.66736 -2971.5686 5986.78076 -1349.95959 -2953.25146 
+			trafoOSToWSRot=raw:0e5dd6bdef8a383474987e3f00000000040080bf0000933464987e3f88321333305dd63d
+			trafoOSToWSPos=vec3:5975.86963 -1349.61462 -2962.99414
+			vobName=string:VOB_GAME_CUP_MIDDLE
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs4=int:0
+		[% zCVob 12289 8]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5970.05566 -1373.64697 -2934.44165 5990.80078 -1349.52759 -2916.33691 
+			trafoOSToWSRot=raw:9e09b3bd1504923c27fb7e3fd265a9bb42f57fbf22dc8e3c98047f3ff5866dbb7232b33d
+			trafoOSToWSPos=vec3:5979.57861 -1349.39966 -2925.91846
+			vobName=string:VOB_GAME_CUP_LEFT
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs5=int:0
+		[% zCVob 12289 9]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5963.73682 -1349.63062 -3007.49487 5983.54053 -1325.89233 -2990.05396 
+			trafoOSToWSRot=raw:308757bd56a206b92fa67f3f6a66ef3af3ff7fbf00e403b804a67f3f8cd5ee3a0d89573d
+			trafoOSToWSPos=vec3:5972.98828 -1325.5636 -2999.34766
+			vobName=string:VOB_GAME_CUP_RIGHT_UP
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs6=int:0
+		[% zCVob 12289 10]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5959.82813 -1374.38977 -2973.50854 5980.81641 -1350.33557 -2955.17725 
+			trafoOSToWSRot=raw:8657d6bdeae18e3cad8e7e3f53929fba17f67fbf679f8e3c94987e3f0b4d203a505ad63d
+			trafoOSToWSPos=vec3:5969.48779 -1350.17688 -2964.93457
+			vobName=string:VOB_GAME_CUP_25
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs7=int:0
+		[% zCVob 12289 11]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5957.31348 -1375.10632 -2937.50342 5978.17969 -1350.63208 -2919.65039 
+			trafoOSToWSRot=raw:04da8ebdf2c70c3d043a7f3f3c540abc22d87fbfaeb30a3d635e7f3f596cc6bbdc5b8f3d
+			trafoOSToWSPos=vec3:5966.68604 -1350.69641 -2929.06494
+			vobName=string:VOB_GAME_CUP_18
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs8=int:0
+		[% zCVob 12289 12]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5976.96191 -1374.72363 -2971.56787 5996.48877 -1351.01587 -2954.49097 
+			trafoOSToWSRot=raw:0e860fbdd11fa13220d87f3f2fad1fb1070080bffacd3b3208d87f3fdb52b0b1ba850f3d
+			trafoOSToWSPos=vec3:5986.06396 -1350.6709 -2963.56885
+			vobName=string:VOB_GAME_CUP_09
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs9=int:0
+		[% zCVob 12289 13]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5981.37549 -1375.32983 -2936.86621 6001.7041 -1350.87012 -2919.64404 
+			trafoOSToWSRot=raw:2a040fbde3c70cbdbab17f3fecc3ed3b2ed87fbf1dd30bbd93d67f3f5c6dc63b4cf20f3d
+			trafoOSToWSPos=vec3:5991.29834 -1350.88904 -2928.86865
+			vobName=string:VOB_GAME_CUP_02
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs10=int:0
+		[% zCVob 12289 14]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5972.34131 -1372.7948 -2966.56323 5982.85107 -1370.78674 -2956.05347 
+			trafoOSToWSRot=raw:865d56bd0000000060a67fbf000000000000803f0000000062a67f3f000000008f5d56bd
+			trafoOSToWSPos=vec3:5977.59619 -1371.78674 -2961.30835
+			vobName=string:VOB_GAME_COIN_MIDDLE
+			visual=string:ITMI_GOLD.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 4]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs11=int:0
+		[% zCVob 12289 15]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5976.10156 -1372.73389 -2929.66943 5986.61133 -1370.72583 -2919.15967 
+			trafoOSToWSRot=raw:3f5e56bd000000005ea67fbf000000000000803f0000000060a67f3f00000000415e56bd
+			trafoOSToWSPos=vec3:5981.35645 -1371.72583 -2924.41455
+			vobName=string:VOB_GAME_COIN_LEFT
+			visual=string:ITMI_GOLD.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 4]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs12=int:0
+		[% zCVob 12289 16]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5966.11035 -1350.67322 -2971.67432 5987.50293 -1326.29346 -2953.30615 
+			trafoOSToWSRot=raw:e26bd6bd89c20e3d25707e3fd25ec7ba2cd87fbfb0e40e3df2977e3fec4a0c3b8866d63d
+			trafoOSToWSPos=vec3:5975.75977 -1326.31482 -2963.10059
+			vobName=string:VOB_GAME_CUP_MIDDLE_UP
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs13=int:0
+		[% zCVob 12289 17]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5969.80518 -1352.30994 -2934.54565 5990.54004 -1328.2749 -2916.49268 
+			trafoOSToWSRot=raw:98fab2bd046c8e3c9dfb7e3f000000001ff67fbff2f78e3c73057f3f2ee7c73ac4f3b23d
+			trafoOSToWSPos=vec3:5979.32861 -1328.1073 -2926.11108
+			vobName=string:VOB_GAME_CUP_LEFT_UP
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs14=int:0
+		[% zCVob 12289 18]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5933.3623 -1373.15039 -3060.9812 5953.02246 -1349.09619 -3044.18994 
+			trafoOSToWSRot=raw:18ff90bca66b8ebc34ec7f3fb8919fba1df67fbffa9e8ebcebf57f3f7ae8c7ba1ace903c
+			trafoOSToWSPos=vec3:5942.73389 -1348.91382 -3053.09497
+			vobName=string:VOB_GAME_CUP_MAIN_LEFT
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs15=int:0
+		[% zCVob 12289 19]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5954.33887 -1374.77405 -3063.1416 5975.47705 -1350.41907 -3045.05322 
+			trafoOSToWSRot=raw:c8fab2bd23670ebdccdd7e3f000000002ed87fbf00f30ebd73057f3fc7e147bbfcdeb23d
+			trafoOSToWSPos=vec3:5964.70068 -1350.38135 -3054.63354
+			vobName=string:VOB_GAME_CUP_MAIN_MIDDLE
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs16=int:0
+		[% zCVob 12289 20]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5978.34033 -1372.16248 -3063.76587 5998.66602 -1348.45471 -3045.74878 
+			trafoOSToWSRot=raw:c8fab2bddd3721b48b057f3f00000000080080bf0000503373057f3f4bc8a8b302fbb23d
+			trafoOSToWSPos=vec3:5987.87109 -1348.10974 -3055.33057
+			vobName=string:VOB_GAME_CUP_MAIN_RIGHT
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs17=int:0
+		[% zCVob 12289 21]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5946.77148 -1374.51648 -2955.98389 5968.16064 -1350.16138 -2937.58105 
+			trafoOSToWSRot=raw:6862d63dda290ebd88707ebf000000001ed87fbfbaf20e3d23987ebf416b6fbb0541d6bd
+			trafoOSToWSPos=vec3:5958.51123 -1350.17126 -2946.15381
+			vobName=string:VOB_GAME_CUP_38
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs18=int:0
+		[% zCVob 12289 22]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5992.4458 -1375.57788 -2955.5376 6013.18262 -1350.85266 -2938.33325 
+			trafoOSToWSRot=raw:a9f50fbd0d3155bd0e7f7f3fe7416fbb40a67fbfa8d855bd79d77f3f4885b3bbbbfc0e3d
+			trafoOSToWSPos=vec3:6002.78906 -1350.99573 -2947.40771
+			vobName=string:VOB_GAME_CUP_33
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs19=int:0
+		[% zCVob 12289 23]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5975.87988 -1375.38025 -2935.37061 5997.15967 -1350.68311 -2917.61792 
+			trafoOSToWSRot=raw:974d8fbd533c56bda5057f3f5668ef3a3ca67fbf373d56bd745f7f3f5c36f1baa04d8f3d
+			trafoOSToWSPos=vec3:5986.5166 -1350.81494 -2927.03394
+			vobName=string:VOB_GAME_CUP_01
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs20=int:0
+		[% zCVob 12289 24]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5980.94482 -1374.84973 -2974.98755 6001.26904 -1351.14197 -2956.97241 
+			trafoOSToWSRot=raw:2fc8b2bd000062b40b067f3ff6cf5bb1090080bfc25a8d32fe057f3f00002533f1c7b23d
+			trafoOSToWSPos=vec3:5990.47461 -1350.797 -2966.55322
+			vobName=string:VOB_GAME_CUP_10
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs21=int:0
+		[% zCVob 12289 25]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5947.81885 -1374.19141 -2986.86987 5969.05322 -1350.15137 -2968.21313 
+			trafoOSToWSRot=raw:35e4f9bd392f8e3caf0c7e3fbfb29fb928f67fbf85f38e3c82167e3fd074ef3a95ddf93d
+			trafoOSToWSPos=vec3:5957.61279 -1349.98608 -2978.15869
+			vobName=string:VOB_GAME_CUP_28
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs22=int:0
+		[% zCVob 12289 26]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5963.15674 -1374.82458 -2934.88159 5983.62158 -1350.11304 -2918.04028 
+			trafoOSToWSRot=raw:7de091bc29d8553dd89c7f3fab81333b7ba67fbf7413563d91f57f3fa23a703b8382903c
+			trafoOSToWSPos=vec3:5972.08252 -1350.32361 -2927.03345
+			vobName=string:VOB_GAME_CUP_17
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs23=int:0
+		[% zCVob 12289 27]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5952.11768 -1374.68237 -2943.99121 5972.21338 -1350.69165 -2925.87085 
+			trafoOSToWSRot=raw:346b8fbd8f36a03a105f7f3faaf78ebc2ff67fbf0000000055557f3faa9e8ebcb6708f3d
+			trafoOSToWSPos=vec3:5961.50879 -1350.48096 -2935.28076
+			vobName=string:VOB_GAME_CUP_19
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs24=int:0
+		[% zCVob 12289 28]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5949.84521 -1374.26807 -2954.13599 5969.94092 -1350.27734 -2936.01563 
+			trafoOSToWSRot=raw:346b8fbd8f36a03a105f7f3faaf78ebc2ff67fbf0000000055557f3faa9e8ebcb6708f3d
+			trafoOSToWSPos=vec3:5959.23633 -1350.06665 -2945.42554
+			vobName=string:VOB_GAME_CUP_21
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs25=int:0
+		[% zCVob 12289 29]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5956.83057 -1374.32227 -2967.81836 5976.92627 -1350.33154 -2949.698 
+			trafoOSToWSRot=raw:346b8fbd8f36a03a105f7f3faaf78ebc2ff67fbf0000000055557f3faa9e8ebcb6708f3d
+			trafoOSToWSPos=vec3:5966.22168 -1350.12085 -2959.10791
+			vobName=string:VOB_GAME_CUP_23
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs26=int:0
+		[% zCVob 12289 30]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5961.63965 -1374.7312 -2970.61621 5981.7915 -1350.19641 -2951.69067 
+			trafoOSToWSRot=raw:733e8fbd303a70bb105f7f3f865e563d4aa67fbf000000009e057f3fb2d7553db6708f3d
+			trafoOSToWSPos=vec3:5971.11865 -1350.30872 -2962.35181
+			vobName=string:VOB_GAME_CUP_24
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs27=int:0
+		[% zCVob 12289 31]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5956.45654 -1374.13062 -2975.97021 5976.55225 -1350.13989 -2957.84985 
+			trafoOSToWSRot=raw:346b8fbd8f36a03a105f7f3faaf78ebc2ff67fbf0000000055557f3faa9e8ebcb6708f3d
+			trafoOSToWSPos=vec3:5965.84766 -1349.9292 -2967.25977
+			vobName=string:VOB_GAME_CUP_26
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs28=int:0
+		[% zCVob 12289 32]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5952.375 -1374.30566 -2979.60498 5972.49854 -1350.03931 -2961.0791 
+			trafoOSToWSRot=raw:6e5a8fbdc030203b105f7f3f7af20ebd3ed87fbf0000000077377f3f12990ebdb6708f3d
+			trafoOSToWSPos=vec3:5961.76514 -1349.96301 -2970.47925
+			vobName=string:VOB_GAME_CUP_27
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs29=int:0
+		[% zCVob 12289 33]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5948.396 -1374.27722 -2993.15405 5968.37842 -1348.93713 -2973.37183 
+			trafoOSToWSRot=raw:010056bdc7e8013c71a47f3ff607d6bd0d997ebf482e1f3b463f7e3ff678d5bda038583d
+			trafoOSToWSPos=vec3:5957.63867 -1349.42285 -2982.53979
+			vobName=string:VOB_GAME_CUP_29
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs30=int:0
+		[% zCVob 12289 34]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5949.01074 -1373.66797 -2998.65894 5969.24512 -1348.37354 -2978.56616 
+			trafoOSToWSRot=raw:91a78ebdaee5ef3b105f7f3f2e13d6bd09997ebf00000000fef87d3f548cd5bdb6708f3d
+			trafoOSToWSPos=vec3:5958.39648 -1348.83484 -2987.8999
+			vobName=string:VOB_GAME_CUP_30
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs31=int:0
+		[% zCVob 12289 35]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5988.01758 -1375.89392 -2944.50244 6008.2251 -1350.84509 -2924.79321 
+			trafoOSToWSRot=raw:13e58ebda406c83b105f7f3fa67eb2bdcc067fbf0000000088667e3faf0eb2bdb6708f3d
+			trafoOSToWSPos=vec3:5997.40479 -1351.17212 -2934.14746
+			vobName=string:VOB_GAME_CUP_03
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs32=int:0
+		[% zCVob 12289 36]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5990.19824 -1375.12463 -2955.2998 6010.37842 -1350.3291 -2935.97949 
+			trafoOSToWSRot=raw:46178fbd4b18a03b105f7f3f81dc8ebd6b607fbf00000000e2bf7e3fce828ebdb6708f3d
+			trafoOSToWSPos=vec3:5999.58691 -1350.52173 -2945.35181
+			vobName=string:VOB_GAME_CUP_05
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs33=int:0
+		[% zCVob 12289 37]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5985.04443 -1374.67456 -2965.85693 6005.19629 -1350.13977 -2946.9314 
+			trafoOSToWSRot=raw:793e8fbdbc39703b105f7f3ffa5d56bd5aa67fbf00000000b2057f3fb0d755bdb6708f3d
+			trafoOSToWSPos=vec3:5994.43359 -1350.198 -2956.31885
+			vobName=string:VOB_GAME_CUP_06
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs34=int:0
+		[% zCVob 12289 38]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5981.56201 -1374.42102 -2967.66089 6001.68555 -1350.15466 -2949.13501 
+			trafoOSToWSRot=raw:6e5a8fbdc030203b105f7f3f7af20ebd3ed87fbf0000000077377f3f12990ebdb6708f3d
+			trafoOSToWSPos=vec3:5990.95215 -1350.07837 -2958.53516
+			vobName=string:VOB_GAME_CUP_07
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs35=int:0
+		[% zCVob 12289 39]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5977.04346 -1374.87427 -2969.68994 5997.13916 -1350.88354 -2951.56958 
+			trafoOSToWSRot=raw:346b8fbd5238a0ba105f7f3f36f98e3c2ef67fbf0000000054557f3f859e8e3cb6708f3d
+			trafoOSToWSPos=vec3:5986.46436 -1350.69092 -2961.4043
+			vobName=string:VOB_GAME_CUP_08
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs36=int:0
+		[% zCVob 12289 40]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5985.17334 -1375.62585 -2981.04639 6005.38086 -1350.57703 -2961.33716 
+			trafoOSToWSRot=raw:15e58ebdb006c83b105f7f3fa07eb2bdd1067fbf000000008e667e3fba0eb2bdb6708f3d
+			trafoOSToWSPos=vec3:5994.56055 -1350.90405 -2970.69141
+			vobName=string:VOB_GAME_CUP_11
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs37=int:0
+		[% zCVob 12289 41]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5988.15869 -1374.72339 -2996.81641 6008.39307 -1349.42883 -2976.72363 
+			trafoOSToWSRot=raw:a4a78ebdaee5ef3b105f7f3ff812d6bd28997ebf0000000028f97d3fa68cd5bdb6708f3d
+			trafoOSToWSPos=vec3:5997.54443 -1349.89014 -2986.05737
+			vobName=string:VOB_GAME_CUP_13
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs38=int:0
+		[% zCVob 12289 42]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5984.50586 -1373.71179 -3002.59814 6004.71338 -1348.66296 -2982.88892 
+			trafoOSToWSRot=raw:13e58ebda806c83b105f7f3fa67eb2bdcc067fbf0000000089667e3fb30eb2bdb6708f3d
+			trafoOSToWSPos=vec3:5993.89307 -1348.98999 -2992.24316
+			vobName=string:VOB_GAME_CUP_14
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs39=int:0
+		[% zCVob 12289 43]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5980.52832 -1372.95923 -3004.34619 6000.62402 -1348.96851 -2986.22583 
+			trafoOSToWSRot=raw:346b8fbd8e36a03a105f7f3faff78ebc30f67fbf0000000057557f3faf9e8ebcb6708f3d
+			trafoOSToWSPos=vec3:5989.91943 -1348.75781 -2995.63574
+			vobName=string:VOB_GAME_CUP_15
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs40=int:0
+		[% zCVob 12289 44]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5989.17969 -1374.30933 -2987.31689 6009.24658 -1350.60156 -2969.60645 
+			trafoOSToWSRot=raw:cc708fbd0000e2b2105f7f3f0000c634150080bf000000004a5f7f3f000010b3b6708f3d
+			trafoOSToWSPos=vec3:5998.57129 -1350.25659 -2979.02393
+			vobName=string:VOB_GAME_CUP_12
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs41=int:0
+		[% zCVob 12289 45]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5949.99902 -1374.68018 -2949.21558 5970.25928 -1349.14771 -2928.74512 
+			trafoOSToWSRot=raw:165f8ebd39d90bbc105f7f3ffb96f93da8177ebf00000000fb777d3fe9f9f83db6708f3d
+			trafoOSToWSPos=vec3:5959.59082 -1349.8689 -2941.02173
+			vobName=string:VOB_GAME_CUP_20
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs42=int:0
+		[% zCVob 12289 46]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5990.50146 -1375.55334 -2949.69922 6010.70898 -1350.50452 -2929.98999 
+			trafoOSToWSRot=raw:11e58ebda206c83b105f7f3fa27eb2bdc8067fbf0000000084667e3fad0eb2bdb6708f3d
+			trafoOSToWSPos=vec3:5999.88867 -1350.83154 -2939.34424
+			vobName=string:VOB_GAME_CUP_04
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs43=int:0
+		[% zCVob 12289 47]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5975.47559 -1377.72449 -3008.3374 5995.65576 -1352.92896 -2989.01709 
+			trafoOSToWSRot=raw:59178fbdfe17a03b105f7f3f62dc8ebd86607fbf000000000ac07e3fd1828ebdb6708f3d
+			trafoOSToWSPos=vec3:5984.86426 -1353.12158 -2998.3894
+			vobName=string:VOB_GAME_CUP_16
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs44=int:0
+		[% zCVob 12289 48]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5951.31934 -1374.29614 -2959.80786 5971.41504 -1350.30542 -2941.6875 
+			trafoOSToWSRot=raw:246b8fbdb837a0ba105f7f3f77f88e3c1ff67fbf0000000035557f3f8f9e8e3cb6708f3d
+			trafoOSToWSPos=vec3:5960.74023 -1350.11279 -2951.52222
+			vobName=string:VOB_GAME_CUP_22
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs45=int:0
+		[% zCVob 12289 49]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5952.52539 -1372.88806 -3005.69043 5972.78564 -1347.35559 -2985.21997 
+			trafoOSToWSRot=raw:095f8ebdfad80b3c105f7f3fb396f9bd95177ebf00000000e4777d3fecf9f8bdb6708f3d
+			trafoOSToWSPos=vec3:5961.90918 -1347.95105 -2994.53052
+			vobName=string:VOB_GAME_CUP_31
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs46=int:0
+		[% zCVob 12289 50]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5956.97705 -1371.92029 -3008.40918 5977.07275 -1347.92957 -2990.28882 
+			trafoOSToWSRot=raw:216b8fbd9b37a0ba105f7f3f5bf88e3c10f67fbf0000000029557f3f639e8e3cb6708f3d
+			trafoOSToWSPos=vec3:5966.39795 -1347.73694 -3000.12354
+			vobName=string:VOB_GAME_CUP_32
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs47=int:0
+		[% zCVob 12289 51]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5995.85303 -1375.66125 -2964.96899 6015.42139 -1351.12646 -2946.67603 
+			trafoOSToWSRot=raw:4afc0ebd2ecbef3af1d77f3f0a5e56bd50a67fbf000000005d7e7f3f803c56bd682e0f3d
+			trafoOSToWSPos=vec3:6004.95361 -1351.18469 -2955.72314
+			vobName=string:VOB_GAME_CUP_34
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs48=int:0
+		[% zCVob 12289 52]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5996.09814 -1375.02161 -2972.22681 6015.63867 -1351.03088 -2954.74072 
+			trafoOSToWSRot=raw:e6280fbdc6ed1f3af1d77f3fd7f78ebc25f67fbf000000001ece7f3f5ce18ebc682e0f3d
+			trafoOSToWSPos=vec3:6005.19971 -1350.82019 -2963.8103
+			vobName=string:VOB_GAME_CUP_35
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs49=int:0
+		[% zCVob 12289 53]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5995.05469 -1375.13074 -2978.71802 6014.60889 -1350.86426 -2960.82568 
+			trafoOSToWSRot=raw:20180fbdcae69fbaf1d77f3fbaf20e3d1ed87fbf000000001db07f3f60dc0e3d682e0f3d
+			trafoOSToWSPos=vec3:6004.18506 -1350.8241 -2970.73633
+			vobName=string:VOB_GAME_CUP_36
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs50=int:0
+		[% zCVob 12289 54]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5993.44385 -1375.30286 -2986.16357 6013.01221 -1350.76819 -2967.87061 
+			trafoOSToWSRot=raw:34fc0ebdb9caefbaf1d77f3f265e563d35a67fbf000000003b7e7f3fc03c563d682e0f3d
+			trafoOSToWSPos=vec3:6002.58887 -1350.88049 -2978.19385
+			vobName=string:VOB_GAME_CUP_37
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs51=int:0
+		[% zCVob 12289 55]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5946.35791 -1374.19104 -2962.73364 5965.92627 -1349.65625 -2944.44067 
+			trafoOSToWSRot=raw:4dfc0ebdf7caef3af3d77f3ffc5d56bd5aa67fbf00000000637e7f3f983c56bd6e2e0f3d
+			trafoOSToWSPos=vec3:5955.4585 -1349.71448 -2953.48779
+			vobName=string:VOB_GAME_CUP_39
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs52=int:0
+		[% zCVob 12289 56]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5945.87988 -1374.06238 -2970.32129 5965.43408 -1349.79602 -2952.42896 
+			trafoOSToWSRot=raw:20180fbd62e79f3af3d77f3fcaf20ebd19d87fbf000000001cb07f3f62dc0ebd6e2e0f3d
+			trafoOSToWSPos=vec3:5954.98047 -1349.71985 -2961.48877
+			vobName=string:VOB_GAME_CUP_40
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs53=int:0
+		[% zCVob 12289 57]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5946.71631 -1373.85388 -2977.61255 5966.25684 -1349.86316 -2960.12646 
+			trafoOSToWSRot=raw:dd280fbdeaec1fbaf1d77f3f92f88e3c11f67fbf000000000ace7f3f10e28e3c682e0f3d
+			trafoOSToWSPos=vec3:5955.83252 -1349.67053 -2969.62158
+			vobName=string:VOB_GAME_CUP_41
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs54=int:0
+		[% zCVob 12289 58]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:5947.31836 -1373.5835 -2983.47876 5966.87256 -1349.31714 -2965.58643 
+			trafoOSToWSRot=raw:21180fbd4ee79f3af1d77f3fc0f20ebd1cd87fbf0000000020b07f3f90dc0ebd682e0f3d
+			trafoOSToWSPos=vec3:5956.41895 -1349.24097 -2974.64624
+			vobName=string:VOB_GAME_CUP_42
+			visual=string:ITMI_STUFF_CUP_01.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			[visual § 0 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs55=int:0
+	[]
+	[EndMarker % 0 0]
+	[]
+[]
