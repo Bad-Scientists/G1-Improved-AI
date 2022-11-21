@@ -1183,6 +1183,9 @@ Story\Missions\DIA_VLK_585_Aleph.d
 Story\Missions\DIA_VLK_586_Grimes.d
 Story\Missions\DIA_VLK_587_Garp.d
 Story\Missions\DIA_XardasDemon.d
+
+MOD\Shell game\CH1 Shell game\*.d
+
 Story\Startup.d
 AI\Test_Skripts\TestZustaende\B_Hurt.d
 AI\Test_Skripts\TestZustaende\ZS_TestGoto.d
