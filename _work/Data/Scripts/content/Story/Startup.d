@@ -7,6 +7,9 @@ func void Init_Global () {
 
 	//Console calls
 	CC_CallInit ();
+
+	//AFSP
+	G12_EnhancedInfoManager_Init ();
 };
 
 func void STARTUP_SUB_PSICAMP()
