@@ -2252,6 +2252,8 @@ func void STARTUP_WORLD()
 	Startup_Sub_Freeminecamp();
 	Startup_Sub_Surface();
 
+	InitQuest_CH1_ShellGame ();
+
 	// die folgende Zeile gilt nur, bis die INIT_...-Funktionen von Ulf unterstützt werden.
 	INIT_WORLD();
 	PlayVideo("INTRO.BIK");
