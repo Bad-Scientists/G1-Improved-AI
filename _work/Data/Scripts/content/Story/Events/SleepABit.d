@@ -1,6 +1,9 @@
 //****************************
 // 		PC_Sleep
 //****************************
+var int PLAYER_MOBSI_PRODUCTION;
+	const int MOBSI_None = 0;
+	const int MOBSI_SleepAbit = 1;
 
 func void PC_Sleep(var int t)
 {
@@ -33,6 +36,7 @@ func void SLEEPABIT_S1()
 	//***ALT** if(Hlp_GetInstanceID(self)== Hlp_GetInstanceID(Hero)) // MH: geändert, damit kontrollierte NSCs nicht schlafen können!
 	if ((Hlp_GetInstanceID(self) == Hlp_GetInstanceID(her)) || (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(rock)))
 	{
+		PLAYER_MOBSI_PRODUCTION = MOBSI_SleepAbit;
 		self.aivar[AIV_INVINCIBLE] = TRUE;
 		AI_ProcessInfos(her);
 	};
@@ -53,11 +57,16 @@ instance PC_NoSleep(c_Info)
 
 func int PC_NoSleep_Condition()
 {
-	return 1;
+	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SleepAbit) {
+		return 1;
+	};
+
+	return 0;
 };
 
 func void PC_NoSleep_Info()
 {
+	PLAYER_MOBSI_PRODUCTION = MOBSI_None;
 	AI_StopProcessInfos(self);
 	self.aivar[AIV_INVINCIBLE] = FALSE;
 };
@@ -76,7 +85,11 @@ instance PC_SleepTime_Morning(C_INFO)
 
 func int PC_SleepTime_Morning_Condition()
 {
-	return 1;
+	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SleepAbit) {
+		return 1;
+	};
+
+	return 0;
 };
 
 func void PC_SleepTime_Morning_Info()
@@ -98,7 +111,11 @@ instance PC_SleepTime_Noon(C_INFO)
 
 func int PC_SleepTime_Noon_Condition()
 {
-	return 1;
+	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SleepAbit) {
+		return 1;
+	};
+
+	return 0;
 };
 
 func void PC_SleepTime_Noon_Info()
@@ -120,7 +137,11 @@ instance PC_SleepTime_Evening(C_INFO)
 
 func int PC_SleepTime_Evening_Condition()
 {
-	return 1;
+	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SleepAbit) {
+		return 1;
+	};
+
+	return 0;
 };
 
 func void PC_SleepTime_Evening_Info()
@@ -142,7 +163,11 @@ instance PC_SleepTime_Midnight(C_INFO)
 
 func int PC_SleepTime_Midnight_Condition()
 {
-	return 1;
+	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SleepAbit) {
+		return 1;
+	};
+
+	return 0;
 };
 
 func void PC_SleepTime_Midnight_Info()
