@@ -1,3 +1,8 @@
+func void Init_Global () {
+	//Ikarus
+	MEM_InitAll();
+};
+
 func void STARTUP_SUB_PSICAMP()
 {
 	// -----------OLD MINE-----------------------------------------
@@ -2216,6 +2221,8 @@ func void INIT_SURFACE()
 // -------- eigentliche Startup des Spiels --------
 func void INIT_WORLD()
 {
+	Init_Global();
+
 	INIT_Sub_Newcamp();
 	INIT_Sub_Oldcamp();
 	INIT_Sub_Psicamp();
@@ -2301,6 +2308,8 @@ func void STARTUP_ORCGRAVEYARD()
 
 func void INIT_ORCGRAVEYARD()
 {
+	Init_Global();
+
 	Wld_SetMobRoutine(00, 00, "FIREPLACE", 1);
 
 	// -------- Attitüden initialisieren --------
@@ -2434,6 +2443,8 @@ func void STARTUP_ORCTEMPEL()
 
 func void INIT_ORCTEMPEL()
 {
+	Init_Global();
+
 	// -------- Objekt-TAs --------
 	Wld_SetMobRoutine(00, 00, "FIREPLACE", 1);
 
@@ -2561,6 +2572,8 @@ func void STARTUP_OLDMINE()
 
 func void INIT_OLDMINE()
 {
+	Init_Global();
+
 	Wld_SetMobRoutine(00, 00, "FIREPLACE", 1);
 
 	// -------- Attitüden initialisieren --------
@@ -2633,6 +2646,8 @@ func void STARTUP_FREEMINE()
 
 func void INIT_FREEMINE()
 {
+	Init_Global();
+
 	// -------------------Fackeln-----------------------------
 	Wld_SetMobRoutine(00, 00, "FIREPLACE", 1);
 
