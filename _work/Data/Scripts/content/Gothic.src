@@ -7,6 +7,9 @@ MOD\Ikarus\EngineClasses_G1\*.d
 MOD\Ikarus\Ikarus.d
 MOD\Ikarus\float.d
 
+// LeGo
+MOD\LeGo\Header_G1.src
+
 AI\AI_Intern\BodyStates.d
 AI\AI_Intern\PrintDebug.d
 AI\AI_Intern\AI_Constants.d
