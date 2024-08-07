@@ -1,6 +1,25 @@
 func void Init_Global () {
 	//Ikarus
 	MEM_InitAll();
+
+	//LeGo
+	LeGo_Init(
+		LeGo_HookEngine
+		| LeGo_View
+		| LeGo_AI_Function
+		| LeGo_Interface
+		| LeGo_PermMem
+		| LeGo_ConsoleCommands
+		| LeGo_GameState
+		| LeGo_Cursor
+		| LeGo_FrameFunctions
+		| LeGo_EventHandler
+		| LeGo_Saves
+		| LeGo_Bars
+		| LeGo_Draw3D
+		| LeGo_PrintS
+		| LeGo_Anim8
+	);
 };
 
 func void STARTUP_SUB_PSICAMP()
