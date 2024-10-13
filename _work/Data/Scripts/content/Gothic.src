@@ -13,6 +13,9 @@ MOD\LeGo\Header_G1.src
 // AFSP
 MOD\AF-Script-Packet\_headers_G1_All.src
 
+// Custom item description
+MOD\customItemDescription.d
+
 AI\AI_Intern\BodyStates.d
 AI\AI_Intern\PrintDebug.d
 AI\AI_Intern\AI_Constants.d
