@@ -307,18 +307,26 @@ func void oCItem_DrawItemInfo_PrintTextAndCountByIndex(var int viewPtr, var int 
  *	Hook implementation
  */
 func void _hook_oCItemContainer_DrawItemInfo_PrintTexts() {
+	//G1
 	//EBX 0x007DC054 const zCWorld::`vftable'
 	//ESI 0x007DD004 const oCNpcInventory::`vftable'
 	//EDI 0x007DD0CC const oCItem::`vftable'
 
-	//Safety checks
-	if (!ESI) { return; };
-	if (!EDI) { return; };
+	//G2 NOTR
+	//EBP 0x0083C714 const oCNpcInventory::`vftable'
+	//EDI 0x0083A5A4 const zCWorld::`vftable'
+	
+	var int npcInvPtr; npcInvPtr = MEMINT_SwitchG1G2(ESI, EBP);
 
-	var oCItemContainer itemContainer; itemContainer = _^(ESI);
+	//Safety checks
+	if (!npcInvPtr) { return; };
+
+	var oCItemContainer itemContainer; itemContainer = _^(npcInvPtr);
 	if (!itemContainer.inventory2_oCItemContainer_viewItemInfo) { return; };
 
-	var int itemPtr; itemPtr = EDI;
+	var int itemPtr; itemPtr = zCListSort_GetData(itemContainer.inventory2_oCItemContainer_contents, itemContainer.inventory2_oCItemContainer_selectedItem);
+	if (!itemPtr) { return; };
+
 	var int viewPtr; viewPtr = itemContainer.inventory2_oCItemContainer_viewItemInfo;
 
 	//Reset positions
@@ -410,11 +418,11 @@ func void G12_CustomItemDescription_Init () {
 		//		006673a9 0f  84  6d       JZ         LAB_0066761c
 		//				 02  00  00
 
-		//006673a7
-		const int oCItemContainer__DrawItemInfo_PrintTexts_G1 = 6714279;
+		//006673af
+		const int oCItemContainer__DrawItemInfo_PrintTexts_G1 = 6714287;
 
-		//00707082
-		const int oCItemContainer__DrawItemInfo_PrintTexts_G2 = 7368834;
+		//0070708a
+		const int oCItemContainer__DrawItemInfo_PrintTexts_G2 = 7368842;
 
 		var int addr1; addr1 = MEMINT_SwitchG1G2(oCItemContainer__DrawItemInfo_PrintTexts_G1, oCItemContainer__DrawItemInfo_PrintTexts_G2);
 
